@@ -1,0 +1,374 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tag {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-wood);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 4vw, 2.1rem);
+  color: var(--primary-jade);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.intro {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.contactCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-subtle, #e6e0d3);
+  border-radius: var(--radius-md, 10px);
+  padding: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.2s ease;
+  color: var(--text-primary, #1a231e);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(26, 35, 30, 0.05));
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:focus,
+.card:active,
+.card:focus-visible {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5cf;
+  box-shadow: var(--shadow-card-hover, 0 10px 28px rgba(26, 35, 30, 0.1));
+}
+
+.iconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md, 10px);
+  background: var(--primary-jade-light, #eaf1ed);
+  color: var(--primary-jade, #224234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(34, 66, 52, 0.12);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.cardLabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted, #7d8c82);
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-primary, #1a231e);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardSub {
+  font-size: 0.78rem;
+  color: var(--text-secondary, #526157);
+}
+
+.active {
+  border-color: var(--primary-jade, #224234) !important;
+  background: var(--primary-jade-light, #eaf1ed) !important;
+}
+
+.active .iconWrapper {
+  background: var(--primary-jade, #224234);
+  color: #ffffff;
+}
+
+.detailsSection {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+.resultBox {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-jade);
+}
+
+.resultTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-jade);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.outletContent {
+  padding: 12px 0;
+}
+
+.hoursCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.hoursHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hoursIcon {
+  color: var(--accent-wood);
+}
+
+.hoursHeader h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.hoursList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hoursList li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  gap: 10px;
+}
+
+.hoursList span {
+  color: var(--text-secondary);
+}
+
+.hoursList strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.formSection {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.formHeader {
+  margin-bottom: 18px;
+}
+
+.formSectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--primary-jade);
+  margin-bottom: 4px;
+}
+
+.formSectionDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.inquiryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputGroup label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.inputGroup input, .inputGroup textarea {
+  background: var(--bg-surface-soft);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  font-family: var(--font-sans);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.inputGroup input:focus, .inputGroup textarea:focus {
+  border-color: var(--primary-jade);
+  background: #ffffff;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  background: var(--primary-jade);
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.submitBtn:hover {
+  background: var(--primary-jade-hover);
+  box-shadow: 0 4px 12px rgba(34, 66, 52, 0.2);
+}
+
+.successAlert {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-jade-light);
+  color: var(--primary-jade);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+@media (max-width: 860px) {
+  .detailsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .header, .overviewCard, .feedbackCard {
+    padding: 20px 18px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    min-height: 44px;
+    text-align: center;
+  }
+
+  .successAlert {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .contactCardsGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .cardValue {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header, .overviewCard, .feedbackCard {
+    padding: 16px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .iconWrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+}

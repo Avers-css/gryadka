@@ -1,0 +1,31 @@
+{
+  "short_name": "Дракон и Феникс",
+  "name": "Китайская Чайная «Дракон и Феникс»",
+  "description": "Аутентичный коллекционный чай прямиком из Юньнани, Уишани и Сычуани, традиционные чайные церемонии Гунфу Ча.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e3a2f",
+  "background_color": "#f7f5f0"
+}

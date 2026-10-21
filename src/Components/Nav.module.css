@@ -1,0 +1,107 @@
+.nav {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-surface, #ffffff);
+  padding: 8px;
+  border-radius: var(--radius-lg, 16px);
+  border: 1px solid var(--border-subtle, #e6e0d3);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(26, 35, 30, 0.05));
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  position: sticky;
+  top: 12px;
+  z-index: 80;
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.2s ease;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  color: var(--text-secondary, #526157);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: var(--radius-md, 10px);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  flex-shrink: 0;
+  min-height: 42px;
+}
+
+.link:focus,
+.link:active,
+.link:focus-visible {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.icon {
+  color: var(--text-muted, #7d8c82);
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.link:hover {
+  color: var(--primary-jade, #224234);
+  background: var(--bg-surface-soft, #f1ede4);
+  border-color: rgba(34, 66, 52, 0.08);
+}
+
+.link:hover .icon {
+  color: var(--primary-jade, #224234);
+}
+
+/* Активная вкладка - контрастный глубокий нефритовый фон и белый текст */
+.active {
+  color: #ffffff !important;
+  background-color: var(--primary-jade, #224234) !important;
+  border-color: var(--primary-jade, #224234) !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(34, 66, 52, 0.25);
+}
+
+.active .icon {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.active:hover {
+  color: #ffffff !important;
+  background-color: var(--primary-jade-hover, #173126) !important;
+}
+
+@media (max-width: 680px) {
+  .nav {
+    top: 6px;
+    padding: 6px;
+    gap: 6px;
+    border-radius: var(--radius-md, 10px);
+  }
+
+  .link {
+    padding: 8px 13px;
+    font-size: 0.88rem;
+    gap: 6px;
+    min-height: 38px;
+  }
+}
+
+@media (max-width: 440px) {
+  .link {
+    padding: 7px 11px;
+    font-size: 0.84rem;
+  }
+}

@@ -1,0 +1,60 @@
+@import './index.css';
+
+.app_wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+  gap: 20px;
+}
+
+.main_layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .app_wrapper {
+    padding: 20px 20px 36px;
+    gap: 18px;
+  }
+  
+  .main_layout {
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .app_wrapper {
+    padding: 16px 14px 28px;
+    gap: 16px;
+  }
+
+  .main_layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .app_wrapper {
+    padding: 10px 10px 24px;
+    gap: 12px;
+  }
+
+  .main_layout {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .app_wrapper {
+    padding: 8px 6px 20px;
+    gap: 10px;
+  }
+}

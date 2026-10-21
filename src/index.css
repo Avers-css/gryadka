@@ -1,0 +1,115 @@
+:root {
+  /* Палитра: Спокойный органический китайский чайный дом (Ivory paper, Jade, Terracotta, Celadon) */
+  --bg-page: #f7f5f0;
+  --bg-surface: #ffffff;
+  --bg-surface-soft: #f1ede4;
+  --bg-surface-elevated: #ffffff;
+  
+  --border-subtle: #e6e0d3;
+  --border-active: #284b3a;
+  --border-focus: #1c382b;
+
+  --text-primary: #1a231e;
+  --text-secondary: #526157;
+  --text-muted: #7d8c82;
+  --text-on-dark: #fbf9f5;
+
+  /* Благородные природные акценты */
+  --primary-jade: #224234;
+  --primary-jade-hover: #173126;
+  --primary-jade-light: #eaf1ed;
+
+  --accent-wood: #7d4422;
+  --accent-wood-hover: #67371a;
+  --accent-wood-light: #f7eee7;
+
+  --accent-amber: #c27c38;
+  --accent-amber-light: #fcf4ea;
+
+  --badge-bg: #edf3f0;
+  --badge-text: #1f4233;
+
+  /* Тени и скругления */
+  --shadow-sm: 0 1px 3px rgba(26, 35, 30, 0.05);
+  --shadow-card: 0 4px 16px rgba(26, 35, 30, 0.06);
+  --shadow-card-hover: 0 10px 28px rgba(26, 35, 30, 0.1);
+  --shadow-elevated: 0 16px 40px rgba(26, 35, 30, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* Типографика */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Предотвращение нежелательного масштабирования на мобильных Safari */
+@media (max-width: 768px) {
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='date'],
+  input[type='number'],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Аккуратный скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4ccbd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a995;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
