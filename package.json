@@ -1,6 +1,7 @@
 {
   "name": "project",
   "version": "0.1.0",
+  "homepage": "https://Avers-css.github.io/gryadka",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
