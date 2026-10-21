@@ -5,6 +5,10 @@
   padding: 36px 32px 20px;
   box-shadow: var(--shadow-sm);
   margin-top: 12px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container {

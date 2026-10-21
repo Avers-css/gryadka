@@ -187,10 +187,16 @@
 @media (max-width: 680px) {
   .card {
     border-radius: var(--radius-md, 10px);
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .imageContainer {
     height: 130px;
+    width: 100%;
   }
 
   .categoryTag {
@@ -204,6 +210,8 @@
 
   .body {
     padding: 10px 10px 12px 10px;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .meta {
@@ -228,6 +236,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 2.4em;
+    word-break: break-word;
   }
 
   .notes {

@@ -164,23 +164,29 @@
 
 @media (max-width: 768px) {
   .catalogWrapper {
-    gap: 12px;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .catalogHeader {
-    padding: 14px 14px;
+    padding: 12px 12px;
     border-radius: var(--radius-md, 10px);
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .subTitle {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     letter-spacing: 1px;
     margin-bottom: 2px;
   }
 
   .title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .categoryDesc {
@@ -191,29 +197,33 @@
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   .searchBox {
     max-width: 100%;
-    padding: 8px 12px;
+    width: 100%;
+    padding: 7px 10px;
+    box-sizing: border-box;
   }
 
   .countBadge {
     align-self: flex-start;
-    font-size: 0.78rem;
-    padding: 4px 10px;
+    font-size: 0.75rem;
+    padding: 3px 8px;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 340px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
   }
 }
