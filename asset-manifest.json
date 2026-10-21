@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/gryadka/static/css/main.c6853e89.css",
+    "main.js": "/gryadka/static/js/main.266a52fc.js",
+    "static/media/puer_gunting.jpg": "/gryadka/static/media/puer_gunting.d3ab221a0dc9130c346b.jpg",
+    "static/media/dongding.jpg": "/gryadka/static/media/dongding.d3ac5e6aa0856fc40f5c.jpg",
+    "static/media/puer_bulang.jpg": "/gryadka/static/media/puer_bulang.325499a29433421888fc.jpg",
+    "static/media/dianhong.jpg": "/gryadka/static/media/dianhong.25972c78b645c18f70e2.jpg",
+    "static/media/taiping_houkui.jpg": "/gryadka/static/media/taiping_houkui.3c584ff91b0c09bdb013.jpg",
+    "static/media/lushan_yunwu.jpg": "/gryadka/static/media/lushan_yunwu.c149c8b26af8a9411335.jpg",
+    "static/media/gaba.jpg": "/gryadka/static/media/gaba.0c41fe7bbfd693077098.jpg",
+    "static/media/shoumei.jpg": "/gryadka/static/media/shoumei.f5e786ba8cfe40e0e4b9.jpg",
+    "static/media/news_luyu.jpg": "/gryadka/static/media/news_luyu.89dac484fd2a4c5074de.jpg",
+    "static/media/baimudan.jpg": "/gryadka/static/media/baimudan.5e22c7e8451ebbde8c62.jpg",
+    "static/media/jinjunmei.jpg": "/gryadka/static/media/jinjunmei.2597e6690bae6e0d1dbd.jpg",
+    "static/media/xiaozhong.jpg": "/gryadka/static/media/xiaozhong.11dd0092247935cce0ef.jpg",
+    "static/media/rougui.jpg": "/gryadka/static/media/rougui.c7ed43789b00c18d3287.jpg",
+    "static/media/qimen.jpg": "/gryadka/static/media/qimen.dab1408b3c714dbfef77.jpg",
+    "static/media/anji_baicha.jpg": "/gryadka/static/media/anji_baicha.b4a5d401b13da0632850.jpg",
+    "static/media/chagao.jpg": "/gryadka/static/media/chagao.8c1fe5a49fca1e45b0e7.jpg",
+    "static/media/news_yixing.jpg": "/gryadka/static/media/news_yixing.b347ff6861b43e5e35e2.jpg",
+    "static/media/biluochun.jpg": "/gryadka/static/media/biluochun.ad931a231109519fe30a.jpg",
+    "static/media/yinzhen.jpg": "/gryadka/static/media/yinzhen.ff25cb00f5b1dacf71ea.jpg",
+    "static/media/news_wuyi.jpg": "/gryadka/static/media/news_wuyi.3dae8e035f2752d40762.jpg",
+    "static/media/dancong.jpg": "/gryadka/static/media/dancong.43eafc07f7f546e1a5b2.jpg",
+    "static/media/shuixian.jpg": "/gryadka/static/media/shuixian.71aa40997bece6eb5e7d.jpg",
+    "static/media/teguanin.jpg": "/gryadka/static/media/teguanin.7c2539524a871a3d0f65.jpg",
+    "static/media/lunczin.jpg": "/gryadka/static/media/lunczin.1fc4248b7a3d13273993.jpg",
+    "static/media/Shu_puer.jpg": "/gryadka/static/media/Shu_puer.4138a6c8985a944dd73d.jpg",
+    "static/media/shen_puer.jpg": "/gryadka/static/media/shen_puer.db857fed63185f1f8e29.jpg",
+    "static/media/daxupao.jpg": "/gryadka/static/media/daxupao.af733e9fc13cc8b737b1.jpg",
+    "index.html": "/gryadka/index.html",
+    "main.c6853e89.css.map": "/gryadka/static/css/main.c6853e89.css.map",
+    "main.266a52fc.js.map": "/gryadka/static/js/main.266a52fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6853e89.css",
+    "static/js/main.266a52fc.js"
+  ]
+}
