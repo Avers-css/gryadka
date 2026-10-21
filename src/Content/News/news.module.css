@@ -73,12 +73,17 @@
   flex-wrap: wrap;
   padding-top: 14px;
   border-top: 1px solid var(--border-subtle);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .categoryPills {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  min-width: 0;
 }
 
 .pill {
@@ -948,22 +953,29 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 860px) {
   .toolbar {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .categoryPills {
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding-bottom: 4px;
-    margin: 0 -4px;
-    padding-left: 4px;
-    padding-right: 4px;
+    gap: 8px;
+    padding: 4px 2px 8px 2px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .categoryPills::-webkit-scrollbar {
@@ -973,11 +985,14 @@
   .pill {
     flex-shrink: 0;
     white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
 
   .searchBox {
     max-width: 100%;
-    min-width: 100%;
+    min-width: 0;
+    width: 100%;
   }
 
   .newsGrid {
