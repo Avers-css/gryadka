@@ -162,40 +162,58 @@
   min-height: 42px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
+  .catalogWrapper {
+    gap: 12px;
+  }
+
   .catalogHeader {
-    padding: 20px;
+    padding: 14px 14px;
+    border-radius: var(--radius-md, 10px);
+    gap: 10px;
+  }
+
+  .subTitle {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .categoryDesc {
+    display: none;
   }
 
   .controls {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 8px;
+    padding-top: 10px;
   }
 
   .searchBox {
     max-width: 100%;
+    padding: 8px 12px;
+  }
+
+  .countBadge {
+    align-self: flex-start;
+    font-size: 0.78rem;
+    padding: 4px 10px;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
-@media (max-width: 480px) {
-  .catalogHeader {
-    padding: 16px 14px;
-    border-radius: var(--radius-md);
-    gap: 12px;
-  }
-
-  .categoryDesc {
-    font-size: 0.88rem;
-  }
-
+@media (max-width: 340px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 }

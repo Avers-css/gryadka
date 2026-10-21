@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Nav from './Components/Nav';
+import BottomNav from './Components/BottomNav';
 import Sidebar from './Components/Sidebar';
 import Footer from './Components/Footer';
 import Catalog from './Content/Catalog/Catalog';
@@ -49,6 +50,7 @@ const App = (props) => {
         </main>
       </div>
       <Footer />
+      <BottomNav />
     </div>
   );
 };

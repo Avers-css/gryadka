@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.css';
-import { MapPinIcon, PhoneIcon, CartIcon } from './Icons';
+import { MapPinIcon, PhoneIcon, CartIcon, LeafIcon } from './Icons';
 import { Link } from 'react-router-dom';
 
 const Header = ({ cartCount = 0 }) => {
@@ -8,9 +8,15 @@ const Header = ({ cartCount = 0 }) => {
     <header className={s.header}>
       <div className={s.brandWrapper}>
         <Link to="/" className={s.brand}>
+          <div className={s.brandLogo}>
+            <LeafIcon size={22} className={s.logoIcon} />
+          </div>
           <div className={s.titles}>
             <span className={s.tagline}>Коллекционный китайский чай</span>
-            <h1 className={s.mainTitle}>Китайская Чайная «Дракон и Феникс»</h1>
+            <h1 className={s.mainTitle}>
+              <span className={s.desktopTitle}>Китайская Чайная «Дракон и Феникс»</span>
+              <span className={s.mobileTitle}>«Дракон и Феникс»</span>
+            </h1>
             <span className={s.subTitle}>Чайная гостиная и традиции Гунфу Ча</span>
           </div>
         </Link>

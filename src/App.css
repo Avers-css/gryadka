@@ -31,30 +31,30 @@
 
 @media (max-width: 860px) {
   .app_wrapper {
-    padding: 16px 14px 28px;
-    gap: 16px;
+    padding: 12px 14px calc(76px + env(safe-area-inset-bottom, 0px)) 14px;
+    gap: 14px;
   }
 
   .main_layout {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 }
 
 @media (max-width: 520px) {
   .app_wrapper {
-    padding: 10px 10px 24px;
-    gap: 12px;
+    padding: 8px 10px calc(74px + env(safe-area-inset-bottom, 0px)) 10px;
+    gap: 10px;
   }
 
   .main_layout {
-    gap: 12px;
+    gap: 10px;
   }
 }
 
 @media (max-width: 380px) {
   .app_wrapper {
-    padding: 8px 6px 20px;
-    gap: 10px;
+    padding: 6px 8px calc(72px + env(safe-area-inset-bottom, 0px)) 8px;
+    gap: 8px;
   }
 }
